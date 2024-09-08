@@ -1,0 +1,9 @@
+en-US, 54/54, 100%, missing 0
+de-DE, 0/54, 0%, missing 54
+it-IT, 0/54, 0%, missing 54
+fr-FR, 0/54, 0%, missing 54
+es-ES, 0/54, 0%, missing 54
+ru-RU, 0/54, 0%, missing 54
+zh-Hans, 0/54, 0%, missing 54
+pt-BR, 0/54, 0%, missing 54
+pl-PL, 0/54, 0%, missing 54

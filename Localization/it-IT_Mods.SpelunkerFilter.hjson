@@ -1,0 +1,68 @@
+Configs: {
+	SFConfig: {
+		// DisplayName: Config
+		// DefaultFilterTooltip: Disable this to prevent the {$ItemName.SpelunkerPotion} from highlighting it
+
+		Headers: {
+			// CustomFilter: Custom Filter
+			// PresetFilter: Preset Filter - Vanilla tiles
+		}
+
+		CustomWhitelist: {
+			// Label: Custom Whitelist
+			// Tooltip: Tiles in this list WILL be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}" and "{$Configs.SFConfig.CustomBlacklist.Label}"
+		}
+
+		CustomBlacklist: {
+			// Label: Custom Blacklist
+			// Tooltip: Tiles in this list WILL NOT be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}"
+		}
+
+		// Pots.Label: Pots
+		// DesertFossil.Label: Desert Fossil
+		// FossilOre.Label: Fossil Ore
+		// Copper.Label: Copper
+		// Tin.Label: Tin
+		// Iron.Label: Iron
+		// Lead.Label: Lead
+		// Silver.Label: Silver
+		// Tungsten.Label: Tungsten
+		// Gold.Label: Gold
+		// Platinum.Label: Platinum
+		// Meteorite.Label: Meteorite
+		// Containers.Label: Containers
+		// FakeContainers.Label: Fake Containers
+		// Containers2.Label: Containers 2
+		// FakeContainers2.Label: Fake Containers 2
+		// Heart.Label: Heart
+		// ManaCrystal.Label: Mana Crystal
+		// Cobalt.Label: Cobalt
+		// Palladium.Label: Palladium
+		// Mythril.Label: Mythril
+		// Orichalcum.Label: Orichalcum
+		// Adamantite.Label: Adamantite
+		// Titanium.Label: Titanium
+		// Chlorophyte.Label: Chlorophyte
+		// DyePlants.Label: Dye Plants
+		// LifeFruit.Label: Life Fruit
+		// Sapphire.Label: Sapphire
+		// Ruby.Label: Ruby
+		// Emerald.Label: Emerald
+		// Topaz.Label: Topaz
+		// Amethyst.Label: Amethyst
+		// Diamond.Label: Diamond
+		// MatureHerbs.Label: Mature Herbs
+		// BloomingHerbs.Label: Blooming Herbs
+		// Statues.Label: Statues
+		// ExposedGems.Label: Exposed Gems
+		// Painting3X3.Label: Paintings (3x3)
+		// Painting6X4.Label: Paintings (6x4)
+		// Painting2X3.Label: Paintings (2x3)
+		// Painting3X2.Label: Paintings (3x2)
+		// AlphabetStatues.Label: Alphabet Statues
+		// MushroomStatue.Label: Mushroom Statue
+		// CatBast.Label: Cat Bast
+		// BoulderStatue.Label: Boulder Statue
+		// AmberStoneBlock.Label: Amber Stone Block
+	}
+}
