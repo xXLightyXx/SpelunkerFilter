@@ -9,10 +9,11 @@ Some tiles cannot be properly configured as they are concidered a sub-tile. For 
 
 This mod also applies to other sources of the "spelunking" effect such as certain pets or other mods.
 
+Credit to Harblesnargits for icon.
+
 Planned:
 * Apply rules to Metal Detector, so you can properly exclude Life Crystal to find those precious Gold Chests faster!
 
-Credit to Harblesnargits for icon.
 [hr][/hr]
 [b]Localization:[/b]
 If you want to add support for different languages, you are welcome to contribute localizations here: [b][url=https://github.com/direwolf420/SpelunkerFilter]GitHub[/url][/b]
