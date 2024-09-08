@@ -1,0 +1,20 @@
+Spelunker Filter - Manually configure which tiles do or don't get highlighted by the Spelunker Potion
+
+[i]Did you ever want to stop copper ore from being highlighted? Did you ever want dirt to be highlighted?
+With this clientside mod, you can![/i]
+
+Using the [b]config[/b], you can manually specify the tiles and their behavior. There is also a preset containing all vanilla tiles for convenience.
+
+Some tiles cannot be properly configured as they are concidered a sub-tile. For example, you can only toggle all or no chests, but not specifically a Gold Chest. If there is demand, I can add support for certain vanilla tiles like Chests.
+
+This mod also applies to other sources of the "spelunking" effect such as certain pets or other mods.
+
+Planned:
+* Apply rules to Metal Detector, so you can properly exclude Life Crystal to find those precious Gold Chests faster!
+
+Credit to Harblesnargits for icon.
+[hr][/hr]
+[b]Localization:[/b]
+If you want to add support for different languages, you are welcome to contribute localizations here: [b][url=https://github.com/direwolf420/SpelunkerFilter]GitHub[/url][/b]
+List of localization contributors:
+* None
