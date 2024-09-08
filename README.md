@@ -7,6 +7,7 @@ Steam Workshop Link: https://steamcommunity.com/sharedfiles/filedetails/?id=3327
 Spelunker Filter - Manually configure which tiles do or don't get highlighted by the Spelunker Potion
 
 *Did you ever want to stop copper ore from being highlighted? Did you ever want dirt to be highlighted?
+You can't find the marble and granite biomes?
 With this clientside mod, you can!*
 
 Using the **config**, you can manually specify the tiles and their behavior. There is also a preset containing all vanilla tiles for convenience.
