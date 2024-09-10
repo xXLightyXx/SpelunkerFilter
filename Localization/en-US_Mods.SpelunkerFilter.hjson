@@ -8,6 +8,11 @@ Configs: {
 			PresetFilter: Preset Filter - Vanilla tiles
 		}
 
+		ApplyToMetalDetector: {
+			Label: Apply To Metal Detector
+			Tooltip: If enabled, applies the same filter settings to the {$ItemName.MetalDetector}
+		}
+
 		CustomWhitelist: {
 			Label: Custom Whitelist
 			Tooltip: Tiles in this list WILL be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}" and "{$Configs.SFConfig.CustomBlacklist.Label}"
@@ -20,29 +25,29 @@ Configs: {
 
 		Pots.Label: Pots
 		DesertFossil.Label: Desert Fossil
-		FossilOre.Label: Fossil Ore
-		Copper.Label: Copper
-		Tin.Label: Tin
-		Iron.Label: Iron
-		Lead.Label: Lead
-		Silver.Label: Silver
-		Tungsten.Label: Tungsten
-		Gold.Label: Gold
-		Platinum.Label: Platinum
-		Meteorite.Label: Meteorite
+		FossilOre.Label: Sturdy Fossil
+		Copper.Label: Copper Ore
+		Tin.Label: Tin Ore
+		Iron.Label: Iron Ore
+		Lead.Label: Lead Ore
+		Silver.Label: Silver Ore
+		Tungsten.Label: Tungsten Ore
+		Gold.Label: Gold Ore
+		Platinum.Label: Platinum Ore
+		Meteorite.Label: Meteorite Ore
 		Containers.Label: Containers
 		FakeContainers.Label: Fake Containers
 		Containers2.Label: Containers 2
 		FakeContainers2.Label: Fake Containers 2
-		Heart.Label: Heart
+		Heart.Label: Life Crystal
 		ManaCrystal.Label: Mana Crystal
-		Cobalt.Label: Cobalt
-		Palladium.Label: Palladium
-		Mythril.Label: Mythril
-		Orichalcum.Label: Orichalcum
-		Adamantite.Label: Adamantite
-		Titanium.Label: Titanium
-		Chlorophyte.Label: Chlorophyte
+		Cobalt.Label: Cobalt Ore
+		Palladium.Label: Palladium Ore
+		Mythril.Label: Mythril Ore
+		Orichalcum.Label: Orichalcum Ore
+		Adamantite.Label: Adamantite Ore
+		Titanium.Label: Titanium Ore
+		Chlorophyte.Label: Chlorophyte Ore
 		DyePlants.Label: Dye Plants
 		LifeFruit.Label: Life Fruit
 		Sapphire.Label: Sapphire
@@ -61,8 +66,8 @@ Configs: {
 		Painting3X2.Label: Paintings (3x2)
 		AlphabetStatues.Label: Alphabet Statues
 		MushroomStatue.Label: Mushroom Statue
-		CatBast.Label: Cat Bast
+		CatBast.Label: Bast Statue
 		BoulderStatue.Label: Boulder Statue
-		AmberStoneBlock.Label: Amber Stone Block
+		AmberStoneBlock.Label: Amber
 	}
 }

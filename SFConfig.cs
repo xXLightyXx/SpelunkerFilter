@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
 
@@ -9,6 +10,9 @@ namespace SpelunkerFilter
 		public override ConfigScope Mode => ConfigScope.ClientSide;
 
 		public static SFConfig Instance => ModContent.GetInstance<SFConfig>();
+
+		[DefaultValue(true)]
+		public bool ApplyToMetalDetector { get; set; }
 
 		[Header("CustomFilter")]
 		[BackgroundColor(220, 220, 220)]

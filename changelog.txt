@@ -1,3 +1,4 @@
 v{ModVersion} has been published to {tMLBuildPurpose} tML v{tMLVersion}
 
-* Initial release
+* Added "Apply to Metal Detector" config toggle
+* Fixed some Preset Filter toggle names being ambiguous
