@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Terraria.Localization;
 using System;
+using Terraria.GameContent.Drawing;
 
 namespace SpelunkerFilter
 {
@@ -14,12 +15,48 @@ namespace SpelunkerFilter
 
         public static Dictionary<int, Func<bool>> tileToDefaultFilterToggle;
 
+		private static bool drawTileRunning;
+
         public override void Load()
         {
             Language.GetOrRegister(presetFilterTooltipKey);
-        }
 
-        public override void PostSetupContent()
+			if (SFConfig.Instance.RemoveSparklingDust)
+			{
+				On_TileDrawing.DrawSingleTile += On_TileDrawing_DrawSingleTile;
+				On_TileDrawing.DrawAnimatedTile_AdjustForVisionChangers += On_TileDrawing_DrawAnimatedTile_AdjustForVisionChangers;
+				On_Dust.NewDust += On_Dust_NewDust;
+			}
+		}
+
+		private static int On_Dust_NewDust(On_Dust.orig_NewDust orig, Microsoft.Xna.Framework.Vector2 Position, int Width, int Height, int Type, float SpeedX, float SpeedY, int Alpha, Microsoft.Xna.Framework.Color newColor, float Scale)
+		{
+			int ret = orig(Position, Width, Height, Type, SpeedX, SpeedY, Alpha, newColor, Scale);
+
+			//The sparkle dust spawns during spelunker effect
+			if (drawTileRunning && ret < Main.maxDust && Main.dust[ret] is Dust dust && dust.type == 204)
+			{
+				dust.active = false;
+			}
+
+			return ret;
+		}
+
+		private static void On_TileDrawing_DrawAnimatedTile_AdjustForVisionChangers(On_TileDrawing.orig_DrawAnimatedTile_AdjustForVisionChangers orig, TileDrawing self, int i, int j, Tile tileCache, ushort typeCache, short tileFrameX, short tileFrameY, ref Microsoft.Xna.Framework.Color tileLight, bool canDoDust)
+		{
+			drawTileRunning = true;
+			orig(self, i, j, tileCache, typeCache, tileFrameX, tileFrameY, ref tileLight, canDoDust);
+			drawTileRunning = false;
+		}
+
+		private static void On_TileDrawing_DrawSingleTile(On_TileDrawing.orig_DrawSingleTile orig, TileDrawing self, Terraria.DataStructures.TileDrawInfo drawData, bool solidLayer, int waterStyleOverride, Microsoft.Xna.Framework.Vector2 screenPosition, Microsoft.Xna.Framework.Vector2 screenOffset, int tileX, int tileY)
+		{
+			drawTileRunning = true;
+			orig(self, drawData, solidLayer, waterStyleOverride, screenPosition, screenOffset, tileX, tileY);
+			drawTileRunning = false;
+		}
+
+		public override void PostSetupContent()
         {
             //GenerateLogOutput();
 

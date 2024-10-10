@@ -15,6 +15,10 @@ namespace SpelunkerFilter
 		[DefaultValue(true)]
 		public bool ApplyToMetalDetector { get; set; }
 
+		[ReloadRequired]
+		[DefaultValue(false)]
+		public bool RemoveSparklingDust { get; set; }
+
 		[Header("CustomFilter")]
 		[BackgroundColor(220, 220, 220)]
 		public List<TileDefinition> CustomWhitelist { get; set; } = new List<TileDefinition>();

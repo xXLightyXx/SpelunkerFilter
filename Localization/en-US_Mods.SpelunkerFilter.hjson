@@ -14,6 +14,11 @@ Configs: {
 			Tooltip: If enabled, applies the same filter settings to the {$ItemName.MetalDetector}
 		}
 
+		RemoveSparklingDust: {
+			Label: Remove Sparkling Dust
+			Tooltip: If enabled, removes the sparkling dust particles that appear over highlighted tiles. May improve performance
+		}
+
 		CustomWhitelist: {
 			Label: Custom Whitelist
 			Tooltip: Tiles in this list WILL be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}" and "{$Configs.SFConfig.CustomBlacklist.Label}"
