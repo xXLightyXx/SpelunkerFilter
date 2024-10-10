@@ -5,7 +5,8 @@ Configs: {
 
 		Headers: {
 			// CustomFilter: Custom Filter
-			// PresetFilter: Preset Filter - Vanilla tiles
+			// PresetFilterGroupToggles: Preset Filter - Group Toggles for Vanilla Tiles
+			// PresetFilter: Preset Filter - Vanilla Tiles
 		}
 
 		ApplyToMetalDetector: {
@@ -21,6 +22,21 @@ Configs: {
 		CustomBlacklist: {
 			// Label: Custom Blacklist
 			// Tooltip: Tiles in this list WILL NOT be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}"
+		}
+
+		ToggleGems: {
+			// Label: Toggle Gems
+			// Tooltip: Toggles all gems
+		}
+
+		TogglePreHMMetalOres: {
+			// Label: Toggle Pre-HM Ores
+			// Tooltip: Toggles all pre-hardmode metal ores
+		}
+
+		ToggleHMMetalOres: {
+			// Label: Toggle HM Ores
+			// Tooltip: Toggles all hardmode metal ores
 		}
 
 		// Pots.Label: Pots

@@ -1,4 +1,3 @@
 v{ModVersion} has been published to {tMLBuildPurpose} tML v{tMLVersion}
 
-* Added "Apply to Metal Detector" config toggle
-* Fixed some Preset Filter toggle names being ambiguous
+* Added group toggles for gems, pre-HM, and HM metal ores

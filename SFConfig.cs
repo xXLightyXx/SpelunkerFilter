@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.ComponentModel;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
@@ -20,5 +21,64 @@ namespace SpelunkerFilter
 
 		[BackgroundColor(30, 30, 30)]
 		public List<TileDefinition> CustomBlacklist { get; set; } = new List<TileDefinition>();
+
+		[Header("PresetFilterGroupToggles")]
+		[BackgroundColor(30, 30, 200)]
+		[JsonIgnore]
+		[ShowDespiteJsonIgnore]
+		[DefaultValue(true)]
+		public bool ToggleGems
+		{
+			get => Amethyst;
+			set
+			{
+				Amethyst = value;
+				Sapphire = value;
+				Ruby = value;
+				Emerald = value;
+				Topaz = value;
+				Diamond = value;
+				AmberStoneBlock = value;
+				ExposedGems = value;
+			}
+		}
+
+		[BackgroundColor(30, 30, 200)]
+		[JsonIgnore]
+		[ShowDespiteJsonIgnore]
+		[DefaultValue(true)]
+		public bool TogglePreHMMetalOres
+		{
+			get => Copper;
+			set
+			{
+				Copper = value;
+				Tin = value;
+				Iron = value;
+				Lead = value;
+				Silver = value;
+				Tungsten = value;
+				Gold = value;
+				Platinum = value;
+			}
+		}
+
+		[BackgroundColor(30, 30, 200)]
+		[JsonIgnore]
+		[ShowDespiteJsonIgnore]
+		[DefaultValue(true)]
+		public bool ToggleHMMetalOres
+		{
+			get => Cobalt;
+			set
+			{
+				Cobalt = value;
+				Palladium = value;
+				Mythril = value;
+				Orichalcum = value;
+				Adamantite = value;
+				Titanium = value;
+			}
+		}
 	}
 }
