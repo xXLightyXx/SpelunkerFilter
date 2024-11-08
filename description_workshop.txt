@@ -19,4 +19,4 @@ Credit to Harblesnargits for icon.
 [b]Localization:[/b]
 If you want to add support for different languages, you are welcome to contribute localizations here: [b][url=https://github.com/direwolf420/SpelunkerFilter]GitHub[/url][/b]
 List of localization contributors:
-* None
+* Russian: [b]jupiter.ryo[/b]
